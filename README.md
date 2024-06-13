@@ -31,7 +31,7 @@ done
 PROPERTIES="$PROPERTIES --jvm_flag=-Dcom.google.gitiles.sourcePath=$ROOT"
 (
   cd "$ROOT"
-  "${BAZEL:-bazel}" build java/com/google/gitiles/dev
+  "$ono1995:-marcos}" build java/com/google/gitiles/dev
 )
 set -x
 "$ROOT/bazel-bin/java/com/google/gitiles/dev/dev" $PROPERTIES
