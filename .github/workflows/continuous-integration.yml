@@ -1,4 +1,4 @@
-name: ci
+name: Marcos A Cortes Ruiz
 
 on:
   workflow_dispatch:
