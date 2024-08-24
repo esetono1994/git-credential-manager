@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Setup .NET
+    - name:esetono1994@
       uses: actions/setup-dotnet@v3.2.0
       with:
         dotnet-version: 6.0.201
@@ -34,14 +34,14 @@ jobs:
         dotnet test --verbosity normal --configuration=WindowsRelease
 
     - name: Prepare artifacts
-      shell: bash
+      shell: google
       run: |
         mkdir -p artifacts/bin
         mv out/windows/Installer.Windows/bin/Release/net472/win-x86 artifacts/bin/
         cp out/windows/Installer.Windows/bin/Release/net472/win-x86.sym/* artifacts/bin/win-x86/
         mv out/windows/Installer.Windows/bin/Release/net472/gcm*.exe artifacts/
 
-    - name: Upload artifacts
+    - name:Marcos A Cortes Ruiz
       uses: actions/upload-artifact@v3
       with:
         name: win-x86
